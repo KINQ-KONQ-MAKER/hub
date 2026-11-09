@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinq Konq Maker — Projets</title>
+<style>
+  :root{
+    --ink:#111111;
+    --paper:#f4f1ea;
+    --line:#111111;
+    --muted:#6b6b6b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding:56px 24px 80px;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+  }
+  .kicker{
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 6px;
+  }
+  h1.title{
+    font-size:clamp(30px, 7vw, 56px);
+    line-height:1;
+    font-weight:800;
+    margin:0 0 28px;
+    letter-spacing:-1px;
+    white-space:nowrap;
+  }
+  .rule{
+    height:4px;
+    background:var(--line);
+    border:none;
+    margin:0 0 36px;
+  }
+  .rule-thin{
+    height:1px;
+    background:var(--line);
+    border:none;
+    opacity:.35;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 22px;
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:48px;
+  }
+  .meta strong{color:var(--ink);}
+  section{margin-bottom:52px;}
+  .rule-section{
+    height:4px;
+    background:var(--line);
+    border:none;
+    margin:0 0 18px;
+  }
+  .section-label{
+    font-size:34px;
+    font-weight:800;
+    letter-spacing:-.5px;
+    margin:0 0 4px;
+    text-transform:lowercase;
+  }
+  .section-sub{
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 18px;
+  }
+  .proj{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    padding:18px 0;
+    border-bottom:1px solid rgba(17,17,17,.15);
+    position:relative;
+  }
+  .proj:last-child{border-bottom:none;}
+  .proj-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .proj-name{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:-.3px;
+  }
+  .proj-arrow{
+    font-size:20px;
+    flex-shrink:0;
+    transition:transform .15s ease;
+  }
+  .proj:hover .proj-arrow{transform:translateX(4px);}
+  .proj-desc{
+    font-size:13.5px;
+    color:var(--muted);
+    margin-top:4px;
+    max-width:520px;
+    line-height:1.4;
+  }
+  .proj-version{
+    display:inline-block;
+    margin-left:8px;
+    font-size:9.5px;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    padding:1px 6px;
+    border:1px solid var(--ink);
+    vertical-align:middle;
+    white-space:nowrap;
+  }
+  footer{
+    margin-top:60px;
+    font-size:12px;
+    color:var(--muted);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  footer a{color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <hr class="rule-section" style="margin-bottom:22px;">
+  <h1 class="title">Kinq Konq Maker</h1>
+  <hr class="rule">
+
+  <div class="meta">
+    <span><strong>Focus</strong> — culture maker, open source</span>
+    <span><strong>Terrain</strong> — impression 3D, domotique</span>
+    <span><strong>Statut</strong> — projets actifs</span>
+  </div>
+
+  <section>
+    <hr class="rule-section">
+    <h2 class="section-label">work</h2>
+    <p class="section-sub">Projets publiés — GitHub Pages</p>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/dellboy/">
+      <div class="proj-row">
+        <span class="proj-name">Dellboy</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Préparation des postes Dell : mises à jour, applications, nettoyage.<span class="proj-version">V3</span></p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/password-generator/">
+      <div class="proj-row">
+        <span class="proj-name">Password Generator</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Générateur de mots de passe.<span class="proj-version">V4</span></p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/raccourcis-clavier/">
+      <div class="proj-row">
+        <span class="proj-name">Raccourcis clavier</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Guide de raccourcis clavier pour switcher entre macOS et Windows 11.<span class="proj-version">V3</span></p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/nameloop/">
+      <div class="proj-row">
+        <span class="proj-name">NameLoop</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Générateur de noms.<span class="proj-version">V5</span></p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/checktail/">
+      <div class="proj-row">
+        <span class="proj-name">Checktail</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Vérification anti-hameçonnage : adresse mail, domaine, lien et en-têtes.<span class="proj-version">V1</span></p>
+    </a>
+  </section>
+
+  <section>
+    <hr class="rule-section">
+    <h2 class="section-label">off work</h2>
+    <p class="section-sub">Projets perso — GitHub Pages</p>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/gegept/">
+      <div class="proj-row">
+        <span class="proj-name">GéGPT</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Chatbot parodique.</p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/spider-atlas/">
+      <div class="proj-row">
+        <span class="proj-name">Spider Atlas</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Encyclopédie des araignées.</p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/atelierpixel/">
+      <div class="proj-row">
+        <span class="proj-name">Atelier Pixel</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Atelier de pixel art.<span class="proj-version">V1</span></p>
+    </a>
+
+    <a class="proj" href="https://kinq-konq-maker.github.io/sansdetour/">
+      <div class="proj-row">
+        <span class="proj-name">Sans Détour</span>
+        <span class="proj-arrow">→</span>
+      </div>
+      <p class="proj-desc">Détourage d'images en PNG transparent.<span class="proj-version">V1.3</span></p>
+    </a>
+  </section>
+
+  <hr class="rule-thin">
+
+  <footer>
+    <span>Kinq Konq Maker</span>
+    <a href="https://github.com/KINQ-KONQ-MAKER" target="_blank" rel="noopener">github.com/KINQ-KONQ-MAKER</a>
+  </footer>
+
+</div>
+</body>
+</html>
